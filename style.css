@@ -5,21 +5,25 @@
           box-sizing: border-box;
 }
 
-* {
-  border: yellow 1px dashed;
-}
-
 body {
   height: 100vh;
   width: 100vw;
   background-color: blue;
 }
 
+nav {
+  height: 15vh;
+  padding: 2vh;
+  position: relative;
+}
+
 .container {
-  height: 100vh;
+  height: 90vh;
+  padding: 2vh;
+  padding-bottom: 5vh;
   width: 100vw;
   min-width: 200px;
-  background-color: black;
+  background-color: #295525;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,21 +31,30 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h1, .text {
+  width: 50vh;
 }
 
 h1 {
   color: #f3369e;
   font-weight: 900;
+  font-size: 8vh;
+}
+
+.text {
+  word-break: break-all;
+  overflow: auto;
+  width: 100% !important;
 }
 
 .icon {
-  position: relative;
-  left: 90%;
+  position: absolute;
+  right: 3vh;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -58,5 +71,17 @@ h1 {
   border-radius: 20px;
   width: 20vw;
   padding: 10px 20px;
+}
+
+@media (max-width: 540px) {
+  body {
+    background-color: red;
+  }
+  body nav {
+    height: 30vh;
+  }
+  body .container {
+    height: 70vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

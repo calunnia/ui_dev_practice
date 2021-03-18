@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-*{border: yellow 1px dashed;
+*{
+    //border: yellow 1px dashed;
 //margin: 3px;
 }
 
@@ -12,31 +13,44 @@ body{
     width: 100vw;
     background-color: blue;
 }
-
+nav{height: 15vh;
+    padding:2vh;
+    position: relative;
+}
 .container{
-    height: 100vh;
+    height: 90vh;
+    padding:2vh;
+    padding-bottom: 5vh;
     width: 100vw;
     
     min-width: 200px;
     //max-width:201px;
-    background-color: black;
+    background-color: rgb(41, 85, 37);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    justify-content: right;
+    justify-content: space-between;
+   
     
 }
+h1,.text{ width:50vh;}
 h1{
     color: rgb(243, 54, 158);
     font-weight: 900;
+    font-size: 8vh;
+   
+}
+.text{
+    word-break: break-all;
+    overflow: auto;
+    width: 100% !important;
+   
 }
 
 
-
 .icon{ 
-    position: relative;
+    position: absolute;
     //top:5px;
-    left: 90%;
+    right: 3vh;
     width:40px;
     height: 40px;
     border-radius: 50%;
@@ -53,4 +67,15 @@ color:white;
     border-radius: 20px;
     width: 20vw;
     padding: 10px 20px;
+}
+
+
+@media (max-width: 540px){
+    body{
+        background-color:red;
+        nav{height: 30vh;}
+        .container{
+            height: 70vh;
+        }
+    }
 }
