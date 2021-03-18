@@ -12,18 +12,17 @@ body {
 }
 
 nav {
-  height: 15vh;
-  padding: 2vh;
+  height: 2vh;
+  padding: 0 5vh;
   position: relative;
 }
 
 .container {
-  height: 90vh;
-  padding: 2vh;
+  height: 80vh;
+  padding: 5vh;
   padding-bottom: 5vh;
   width: 100vw;
   min-width: 200px;
-  background-color: #295525;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,8 +35,8 @@ nav {
           justify-content: space-between;
 }
 
-h1, .text {
-  width: 50vh;
+h1 {
+  width: 40vw;
 }
 
 h1 {
@@ -49,11 +48,11 @@ h1 {
 .text {
   word-break: break-all;
   overflow: auto;
-  width: 100% !important;
+  width: 25vw;
 }
 
 .icon {
-  position: absolute;
+  position: fixed;
   right: 3vh;
   width: 40px;
   height: 40px;
@@ -61,27 +60,26 @@ h1 {
 }
 
 .text {
-  line-height: 1.5em;
+  line-height: 1.8em;
   color: white;
 }
 
 .btn {
   background-color: black;
   color: white;
-  border-radius: 20px;
-  width: 20vw;
-  padding: 10px 20px;
+  border-radius: 50px;
+  width: 15vw;
+  padding: 20px 10px;
+  outline: none;
+  border: none;
 }
 
 @media (max-width: 540px) {
-  body {
-    background-color: red;
-  }
   body nav {
-    height: 30vh;
+    height: 20vh;
   }
   body .container {
-    height: 70vh;
+    height: 75vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
